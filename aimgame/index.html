@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style1.css">
+  </head>
+
+  <body>
+    <div class="app">
+      <img id="dragon" src="https://svgsilh.com/svg/2076543.svg" alt="" />
+      <div class="startGame">
+        <h1>Дави дырки!</h1>
+        <p id="startBtn">Начать давить</p>
+      </div>
+      <div class="timeSettings">
+        <h1>Выберите время для давки дырок</h1>
+        <div class="buttons">
+          <button value="10">10 секунд</button>
+          <button value="20">20 секунд</button>
+          <button value="30">30 секунд</button>
+        </div>
+      </div>
+      <div class="game">
+        <div class="time">Осталось <span id="timer">0000</span></div>
+        <div class="board" id="board"></div>
+        <button id="restart">Ещё подавим?</button>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

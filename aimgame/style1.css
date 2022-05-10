@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    height: 100vh;
+  }
+  
+  .app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #4d4848;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: grey;
+    color: white;
+  }
+  
+  button:active {
+    background-color: yellow;
+    color: black;
+  }
+  
+  p {
+    color: #e3e2c5;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  p:hover {
+    color: crimson;
+  }
+  
+  P:active {
+    color: yellow;
+  }
+  
+  .move-up {
+    transform: translate(0, -800px);
+  }
+  
+  #dragon {
+    width: 564px;
+    position: absolute;
+    transition: transform 1s ease;
+  }
+  
+  .startGame {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .timeSettings {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .game {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 30px;
+  }
+  
+  #board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(
+      circle,
+      rgba(232, 226, 89, 1) 0%,
+      rgba(142, 139, 138, 1) 87%
+    );
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .circle {
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 4px 4px 55px 0px rgba(34, 60, 80, 0.2);
+  }
+  
+  #restart {
+    opacity: 0;
+  }
+  
